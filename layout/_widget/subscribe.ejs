@@ -30,7 +30,7 @@
         <h3>Email Alerts:</h3>
       <form>
       <input type="email" id="emailInput" />
-      <button id="emailButton" type="button" onclick="OneSignal.setEmail(`${document.getElementById('name').value}`)">Submit</button>
+      <button id="emailButton" type="button" onclick="OneSignal.setEmail(`${document.getElementById('emailInput').value}`); window.location.reload(true)">Submit</button>
     </form>
     <hr>
     <h3>Push Notifcations:</h3>
